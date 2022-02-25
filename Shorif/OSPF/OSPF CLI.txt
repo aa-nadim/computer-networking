@@ -1,0 +1,19 @@
+en
+conf t
+int fa0/0
+ip address 192.168.30.2 255.255.255.0
+no shut
+exit
+int fa1/0
+ip address 192.168.40.2 255.255.255.0
+no shut
+exit
+int fa2/0
+ip address 192.168.50.1 255.255.255.0
+no shut
+exit
+router ospf 3
+network 192.168.30.0 0.0.0.255 area 1
+network 192.168.40.0 0.0.0.255 area 1
+network 192.168.50.0 0.0.0.255 area 1
+exit
