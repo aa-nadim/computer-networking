@@ -1,0 +1,12 @@
+en
+conf t
+int fa0/3
+switchport mode access 
+switchport port-security
+switchport port-security maximum 1
+switchport port-security mac-address sticky
+exit
+exit
+-------------------------------------------------
+
+show running config
