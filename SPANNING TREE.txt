@@ -1,4 +1,0 @@
-en
-conf t
-no spanning-tree vlan 1
-exit
